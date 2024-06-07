@@ -5,4 +5,5 @@ langchain-community==0.0.12
 langchainhub==0.1.14
 chromadb==0.4.22
 python-dotenv
+httpx
 

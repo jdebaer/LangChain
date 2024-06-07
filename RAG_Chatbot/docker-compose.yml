@@ -7,15 +7,15 @@ services:
     env_file:
       - ./vars/.env
 
-#  chatbot_api:
-#    build:
-#      context: ./chatbot_api
-#    env_file:
-#      - .env
-#    depends_on:
-#      - hospital_neo4j_etl
-#    ports:
-#      - "8000:8000"
+  chatbot_api:
+    build:
+      context: ./chatbot_api
+    env_file:
+      - ./vars/.env
+    depends_on:
+      - hospital_neo4j_etl
+    ports:
+      - "8000:8000"
 #
 #  chatbot_frontend:
 #    build:
