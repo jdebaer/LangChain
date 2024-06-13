@@ -92,7 +92,7 @@ hospital_rag_agent = create_openai_functions_agent(
 hospital_rag_agent_executor = AgentExecutor(
     agent=hospital_rag_agent,
     tools=tools,
-    return_intermediate_steps=False,
+    return_intermediate_steps=True,
     verbose=False,
 )
 
